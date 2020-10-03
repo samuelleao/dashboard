@@ -1,0 +1,53 @@
+.bt-primary {
+    height: var(--input_height);
+    outline-style: none;
+    padding: 0px 30px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: var(--radius);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.bt-select {
+    width: 50%;
+}
+
+.bt-select:hover {
+    background-color: var(--color_second);
+    border-color: var(--color_second);
+}
+
+.input-standard {
+    height: var(--input_height);
+}
+
+.action {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.action-submit {
+    background-color: #42A8D5 ;
+    border-color: #42A8D5;
+}
+
+.action-submit:hover{
+    box-shadow: 0px 4px 20px rgba(167, 167, 167, 0.25);
+}
+
+.action-stop {
+    border-color: var(--color_grey);
+    color: var(--color_grey);
+}
+
+.action-stop:hover {
+    background-color: #C66F6F;
+    border-color: #C66F6F;
+    color: #fff;
+}
+
+

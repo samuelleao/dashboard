@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/inputs.css">
+</head>
+
+<body class="index">
+    <main>
+        <div class="control-area">
+            <h6 class="title-big color-second">Dashboard</h6>
+            <form action="">
+                <div class="form-line">
+                    <label for="">Selecione o tipo de leitura:</label>
+                    <div class="select-area">
+                        <button class="bt-primary bt-select" data-value="analogico">Analógico</button>
+                        <button class="bt-primary bt-select" data-value="digital">Digital</button>
+                    </div>
+                </div>
+
+                <div class="form-line">
+                    <label for="">Porta:</label>
+                    <div class="input-area">
+                        <i class="fas fa-door-open color-grey"></i>
+                        <input type="text" class="input-standard" placeholder="Digite a porta"/>
+                    </div>
+                </div>
+                <button class="bt-primary action action-submit">Enviar</button>
+                <button class="bt-primary action action-stop">Parar</button>
+            </form>
+        </div>
+    </main>
+    <script src="js/input_value.js"></script>
+</body>
+</html>

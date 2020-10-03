@@ -1,0 +1,72 @@
+.control-area {
+    padding: 35px 30px;
+    border: 3px solid var(--color_second);
+    width: 30%;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+@media(max-width: 1080px){
+    .control-area{
+        width: 95%;
+    }
+}
+
+.index>main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index > main::before{
+    content: '01000101 01010011 01010000 00110011 00110010';
+    position: absolute;
+    bottom: 15px;
+    color: rgba(255, 255, 255, 10%);
+    z-index: -1;
+}
+
+.index .control-area .select-area {
+    display: flex;
+    grid-gap: 1em;
+}
+
+.index .control-area label {
+    margin-bottom: 1em;
+    color: var(--color_grey);
+}
+
+.index .control-area .form-line {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.index .control-area .form-line .input-area {
+    position: relative;
+    width: 100%;
+    height: var(--input_height);
+    display: flex;
+    align-items: center;
+}
+
+.index .control-area .form-line .input-area .input-standard {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: transparent;
+    border-radius: var(--radius);
+    border: 2px solid #fff;
+    padding: 0px 40px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.index .control-area .form-line .input-area i {
+    position: absolute;
+    left: 15px;
+}

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --color_primary: #15121E;
+    --color_second: #AF6FC6;
+    --color_grey: #696969;
+    --radius: 15px;
+    --input_height: 50px;
+}
+
+body {
+    background-color: var(--color_primary);
+    background-image: url(../images/wave_effect.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: relative;
+}
+
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/binarie.svg);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/binarie.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    z-index: -1;
+}
+
+.title-big{
+    font-size: 50px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+/* Colors */
+.color-second{
+    color: var(--color_second);
+}
+
+.color-primary{
+    color: var(--color_primary);
+}
+
+.color-grey{
+    color: var(--color_grey);
+}
+/* Background Colors */
+.bg-color-second{
+    color: var(--color_second);
+}
+
+.bg-color-primary{
+    color: var(--color_primary);
+}
